@@ -1,6 +1,10 @@
-Proof of Concept / description
+# Proof of Concept / description
+
+## Description
 
 A Stored Cross-Site Scripting vulnerability exists in the web application. A user can use Base Tag Hijacking in order to redirect relative Javascript imports to a malicious attacker-controlled server. The attacker can host a file containing arbitrary Javascript code.
+
+Proof of Concept
 
 Firstly, let's create an account and login.
 
@@ -16,3 +20,20 @@ I will, then, setup a Python Simple HTTP Server in order to host the external Ja
 
 ![](4.png)
 
+Next, from the source code, it is loading a Bootstrap file. This will be created on the attacker's machine. The payload prints the current logged in user's username.
+
+![](6.png)
+
+![](7.png)
+
+Once the malicious file is created, I can save the injection.
+
+![](8.png)
+
+Which will give pop up an alert.
+
+![](9.png)
+
+Logging into another user and browsing to the page proves that one can use this against other users.
+
+![](10.png)
