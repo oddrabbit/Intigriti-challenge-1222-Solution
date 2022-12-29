@@ -10,3 +10,9 @@ Firstly, let's create an account and login.
 
 ![](3.png)
 
+I will, then, setup a Python Simple HTTP Server in order to host the external Javascript files. I can, then, inject a Base tag and redirect it to my machine in order to achieve Base Tag Hijacking so that it will execute said attacker-controlled Javascript files.
+
+![](5.png)
+
+![](4.png)
+
