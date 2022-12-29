@@ -1,4 +1,4 @@
-# Proof of Concept / description
+# Proof of Concept / Description
 
 ## Description
 
